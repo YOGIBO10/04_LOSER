@@ -1,2 +1,94 @@
 @charset "UTF-8";
 *,
+
+.header-box {
+  height: 80px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(238, 255, 0);
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 20%;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 20px;
+  font-weight: 600;
+  background: rgb(238, 255, 0);
+}
+
+nav {
+  width: 30%;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  width: 33%;
+}
+
+a {
+  display: block;
+  width: 100%;
+  line-height: 80px;
+  text-align: center;
+}
+
+.mobile-menu {
+  display: none;
+  width: 30px;
+  height: 22px;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.line {
+  background-color: rgb(212, 250, 0);
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.line:nth-of-type(1) {
+  top: 0;
+}
+
+.line:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.line:nth-of-type(3) {
+  bottom: 0;
+}
+
+/* モバイル用表示切り替え */
+@media (max-width: 800px) {
+  .mobile-menu {
+    display: block;
+  }
+
+  .pc-menu {
+    display: none;
+  }
+}
