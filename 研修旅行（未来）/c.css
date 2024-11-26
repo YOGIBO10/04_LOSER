@@ -115,3 +115,9 @@ p.sample img {
   bottom: 0vh;
   width: 100%;
 }
+
+.flex{
+  background-color: aqua;
+	height: 480px;
+
+}
