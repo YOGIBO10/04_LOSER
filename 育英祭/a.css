@@ -1,19 +1,35 @@
 header{
     text-align: center;
-    color:darkblue
+    color:darkblue;
+    padding: 10px;
+    background: red;
 }
+
+.校内展示 {
+    color: #333333;
+}
+
+.校内展示:first-letter {
+    color: #2589d0;
+    font-size: 2em;
+}
+
 .お化け画像{
     width: 300px;
 }
+
 .仮想投資{
     width: 300px;
 }
+
 .育英祭司会{
     width: 300px;
 }
+
 .中ステダンス{
     width: 500px;
 }
+
 body {
     background-color:rgb(212, 214, 94)
 
