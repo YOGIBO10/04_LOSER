@@ -116,8 +116,12 @@ p.sample img {
   width: 100%;
 }
 
-.flex{
-  background-color: aqua;
-	height: 480px;
-
+.container {
+  background-position: right;
+  background: -moz-linear-gradient(top, #0051ff, #2fb2fd);
+  background: -webkit-linear-gradient(top, #50a8f0ea, #2fb2fd);
+  background: linear-gradient(to bottom, #bad2ff, #2fb2fd);
+	height: 50px;
+  width: 80px;
+	transform: skewX(-13deg);
 }
