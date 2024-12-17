@@ -1,5 +1,10 @@
 header{
-    text-align: center;
+    animation-name: rotation;/*keyframesと紐づける*/
+    animation-duration: 0.1s;/*3秒かけて動く*/
+    animation-iteration-count:infinite;/*1回限り*/
+    animation-delay: 0s;/*読み込んでから2秒後に実行*/
+    animation-fill-mode: forwards;/*実行後キーフレームの設定を維持*/
+    animation-timing-function: ease-in-out;/*徐々に加速して減速する動き方*/
 }
 body {
     background-color:orange
