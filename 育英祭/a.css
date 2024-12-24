@@ -151,3 +151,24 @@ body::after {
 	.st13{opacity:0.2;}
 	.st14{clip-path:url(#SVGID_16_);}
 	.st15{opacity:0.3;fill:#FFFFFF;enable-background:new    ;}
+
+
+/*下線アニメーション*/
+
+
+  .anim-box.slidein.is-animated {
+	animation-お化け屋敷ポスター: 1slideIn 21s 3cubic-bezier(0.25, 1, 0.5, 1) 4forwards;
+  }
+   
+  @keyframes slideIn {
+	0% {
+	  transform: translateX(180px);
+	  opacity: 0;
+	}
+	100% {
+	  transform: translateX(0);
+	}
+	40%,100% {
+	  opacity: 1;
+	}
+  }
