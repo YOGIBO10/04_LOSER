@@ -153,7 +153,7 @@ body::after {
 	.st15{opacity:0.3;fill:#FFFFFF;enable-background:new    ;}
 
 
-/*下線アニメーション*/
+
 
 
   .anim-box.slidein.is-animated {
@@ -172,3 +172,29 @@ body::after {
 	  opacity: 1;
 	}
   }
+  @keyframes fadeIn {
+	from {
+	  opacity: 0; /* アニメーション開始時は透明 */
+	}
+	to {
+	  opacity: 1; /* アニメーション終了時は完全に表示 */
+	}
+  }
+  
+  /* フェードインを適用する要素のスタイル */
+  .element-1 {
+	animation: fadeIn 2s ease-in; /* 2秒かけてゆっくりフェードインする */
+  }
+
+  .btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+
