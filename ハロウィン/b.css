@@ -36,7 +36,7 @@ h2 {
   }
   
   /* バウンドアニメーションを適用する要素のスタイル */
-  .element-2 {
+  .ghost {
     animation: bounce 2s infinite; /* 2秒間隔で無限にバウンドする */
   }
   
