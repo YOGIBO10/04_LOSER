@@ -116,15 +116,6 @@ p.sample img {
   width: 100%;
 }
 
-.container {
-  background-position: right;
-  background: -moz-linear-gradient(top, #0051ff, #2fb2fd);
-  background: -webkit-linear-gradient(top, #50a8f0ea, #2fb2fd);
-  background: linear-gradient(to bottom, #bad2ff, #2fb2fd);
-	height: 50px;
-  width: 80px;
-	transform: skewX(-13deg);
-}
 
 *{
 
@@ -137,17 +128,110 @@ p.sample img {
 }
 
 body{
-
-  width: 100%;
-
-  height: 100vh;
-
-  background: #000;
-
+  background-color: rgba(42, 129, 243, 0.411);
+  background-size:contain;
 }
 
-marquee{
+.class1{
+  position: relative;
+  margin: 50px;
+  width: 700px;
+  height: 900px;
+}
 
-  height: 100vh;
+.class2 {
+  position: absolute;
+  top: 25px;
+  left: 770px;
+  width: 1050px;
+  height: 680px;
+  animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  }
+   
+  @keyframes slideIn {
+    0% {
+      transform: translateX(180px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+    }
+    40%,100% {
+      opacity: 1;
+    }
+  }
 
+  .class6 {
+    position: absolute;
+    top: 1200px;
+    left: 770px;
+    width: 1050px;
+    height: 680px;
+    animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    }
+     
+    @keyframes slideIn {
+      0% {
+        transform: translateX(180px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+      }
+      40%,100% {
+        opacity: 1;
+      }
+    }
+
+    .class7 {
+      position: absolute;
+      top: 2400px;
+      left: 770px;
+      width: 1050px;
+      height: 680px;
+      animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+      }
+       
+      @keyframes slideIn {
+        0% {
+          transform: translateX(180px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+        }
+        40%,100% {
+          opacity: 1;
+        }
+      }
+
+.class3 {
+  z-index: 1;
+  position: absolute;
+  top: 50px;
+  width: 900px;
+  height: 920px;
+}
+
+.class4{
+  z-index: 1;
+  position: absolute;
+  top: 1250px;
+  width: 900px;
+  height: 920px;
+}
+
+.class5{
+  z-index: 1;
+  position: absolute;
+  top: 2450px;
+  width: 900px;
+  height: 920px;
+}
+
+.class100 {
+  z-index: 2;
+  position: relative;
+  top:350% ;
+  left:14% ;
 }

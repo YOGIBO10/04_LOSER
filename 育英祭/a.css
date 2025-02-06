@@ -194,7 +194,7 @@ body::after {
 	color: #FFF;
 	border-bottom: solid 4px #627295;
 	border-radius: 3px;
-	width: 10%;
+	width: 5%;
   }
   .btn-square:active {
 	/*ボタンを押したとき*/
@@ -202,3 +202,13 @@ body::after {
 	transform: translateY(4px);/*下に動く*/
 	border-bottom: none;/*線を消す*/
   }
+
+  .container {
+    display: flex;
+    justify-content: space-around; /* 画像の間に均等に余白を設定 */
+}
+.container img {
+    width: 30%; /* 画像が3つ並ぶように設定 */
+    height: auto;
+}
+
