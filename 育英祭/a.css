@@ -6,7 +6,15 @@ header{
     width: ;
 }
 .校内展示 {
-    color: #333333;
+    color: #272e27;
+}
+
+.校内展示文{
+	color:#33352c;
+}
+
+.模擬店{
+	color:#ee752f;
 }
 
 .お化け画像{
@@ -45,9 +53,9 @@ header{
 }
 
 body {
-    background: -moz-linear-gradient(45deg, #02e1ba 0%, #26c9f2 29%, #d911f2 66%, #ffa079 100%);
-    background: -webkit-linear-gradient(45deg, #02e1ba 0%,#26c9f2 29%,#d911f2 66%,#ffa079 100%);
-    background: linear-gradient(45deg, #02e1ba 0%,#26c9f2 29%,#d911f2 66%,#ffa079 100%);
+    background: -moz-linear-gradient(45deg, #d1ffff 0%, #c2e0ff 29%, #efc6f2 66%, #ffe0d1 100%);
+    background: -webkit-linear-gradient(45deg, #d1ffff 0%,#c2e0ff 29%,#efc6f2 66%,#ffe0d1 100%);
+    background: linear-gradient(45deg, #d1ffff 0%,#c2e0ff 29%,#efc6f2 66%,#ffe0d1 100%);
     background-size: 400% 400%;
     -webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
@@ -190,11 +198,11 @@ body::after {
 	display: inline-block;
 	padding: 0.5em 1em;
 	text-decoration: none;
-	background: #fa7900;/*ボタン色*/
+	background: #422dff;/*ボタン色*/
 	color: #FFF;
 	border-bottom: solid 4px #627295;
 	border-radius: 3px;
-	width: 5%;
+	width: 6%;
   }
   .btn-square:active {
 	/*ボタンを押したとき*/
@@ -211,4 +219,5 @@ body::after {
     width: 30%; /* 画像が3つ並ぶように設定 */
     height: auto;
 }
+
 
