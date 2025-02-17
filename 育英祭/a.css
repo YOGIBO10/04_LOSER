@@ -5,8 +5,17 @@ header{
     background: #2589d0;
     width: ;
 }
+
+footer{
+	text-align: center;
+	color:#2589d0;
+	padding: 10px;
+	background:rgb(251, 255, 7);
+	width: ;
+}
+
 .校内展示 {
-    color: #272e27;
+    color: #33352c;
 }
 
 .校内展示文{
@@ -14,7 +23,19 @@ header{
 }
 
 .模擬店{
-	color:#ee752f;
+	color:#33352c;
+}
+
+.模擬店文{
+	color: #33352c;
+}
+
+.中ステージ{
+	color: #33352c;
+}
+
+.中ステージ文{
+	color: #33352c;
 }
 
 .お化け画像{
@@ -28,7 +49,7 @@ header{
 .仮想投資{
     width: 300px;
     transition: all 0.3s ease-in-out;
-    display:flex
+	padding: 10px;
 }
 .仮想投資:hover{
     transform: scale(1.1);
@@ -37,7 +58,7 @@ header{
 .育英祭司会{
     width: 300px;
     transition: all 0.3s ease-in-out;
-    display:flex
+	padding: 10px;
 }
 .育英祭司会:hover{
     transform: scale(1.1);
@@ -46,7 +67,7 @@ header{
 .中ステダンス{
     width: 500px;
     transition: all 0.3s ease-in-out;
-    display:flex
+	padding: 10px;
 }
 .中ステダンス:hover{
     transform: scale(1.1); 
@@ -199,10 +220,11 @@ body::after {
 	padding: 0.5em 1em;
 	text-decoration: none;
 	background: #422dff;/*ボタン色*/
-	color: #FFF;
+	color: rgb(251, 255, 7);
 	border-bottom: solid 4px #627295;
 	border-radius: 3px;
 	width: 6%;
+	transition: all 0.5s 0s ease;
   }
   .btn-square:active {
 	/*ボタンを押したとき*/
@@ -211,13 +233,11 @@ body::after {
 	border-bottom: none;/*線を消す*/
   }
 
-  .container {
-    display: flex;
-    justify-content: space-around; /* 画像の間に均等に余白を設定 */
-}
-.container img {
-    width: 30%; /* 画像が3つ並ぶように設定 */
-    height: auto;
-}
+  .btn-square:hover {
+	background: rgb(251, 255, 7);
+    color: #422dff;
+  }
 
-
+.flexbox{
+	display: flex;
+}
