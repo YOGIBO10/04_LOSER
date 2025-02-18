@@ -26,9 +26,64 @@ header {
   background: rgb(238, 255, 0);
 }
 
+.button014 a {
+  background: #584cf7;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 240px;
+  padding: 10px 25px;
+  color: #d0f529;
+  transition: 0.3s ease-in-out;
+  font-weight: 500px;
+}
+.button014 a::before {
+content: '';
+position: absolute;
+top: -1px;
+width: calc(100% - 4px);
+height: calc(100% - 4px);
+border: 2px solid #ffe600;
+transition: 0.2s;
+}
+
+.button014 a::after {
+content: '';
+width: 5px;
+height: 5px;
+border-top: 3px solid #333333;
+border-right: 3px solid #333333;
+transform: rotate(45deg);
+}
+
+.button014 a:hover::before {
+top: 0;
+left: 0;
+}
+
+.button014 a:hover {
+text-decoration: none;
+background-color: #b3d9ff;
+}
+
+.simple-scale {
+  padding: 20px;
+  background-color: #333;
+}
+
+.simple-scale:hover {
+  transform: scale(1.02);
+}
+
 nav {
   width: 30%;
 }
+
+table{
+  margin:auto;
+  }
 
 ul {
   width: 100%;
@@ -127,10 +182,23 @@ p.sample img {
 
 }
 
+
+
+
 body{
-  background-color: rgba(42, 129, 243, 0.411);
-  background-size:contain;
-}
+    background: linear-gradient(45deg, #6bb6ff 0%, #2b52ff 50%, #85e3ec 100%) 0 0 / 200% 100% repeat;
+    animation: colorchangeanimation-bg 5s infinite alternate;
+  }
+  
+  @keyframes colorchangeanimation-bg {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+
 
 .class1{
   position: relative;
@@ -141,10 +209,10 @@ body{
 
 .class2 {
   position: absolute;
-  top: 25px;
   left: 770px;
   width: 1050px;
   height: 680px;
+  border: solid 6px #000000; 
   animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   }
    
@@ -163,10 +231,11 @@ body{
 
   .class6 {
     position: absolute;
-    top: 1200px;
+    top: 1000px;
     left: 770px;
     width: 1050px;
     height: 680px;
+    border: solid 6px #000000; 
     animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
     }
      
@@ -185,10 +254,11 @@ body{
 
     .class7 {
       position: absolute;
-      top: 2400px;
+      top: 2250px;
       left: 770px;
       width: 1050px;
       height: 680px;
+      border: solid 6px #000000; 
       animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
       }
        
@@ -208,7 +278,7 @@ body{
 .class3 {
   z-index: 1;
   position: absolute;
-  top: 50px;
+  top: 182px;
   width: 900px;
   height: 920px;
 }
@@ -229,9 +299,30 @@ body{
   height: 920px;
 }
 
+.example{
+  font-family: 'ＭＳ 明朝', serif;
+}
+
 .class100 {
   z-index: 2;
   position: relative;
-  top:350% ;
-  left:14% ;
+  top:520% ;
+  left:10% ;
+  font-size: 26px
+}
+
+.class101{
+  z-index: 2;
+  position: relative;
+  top: 1400px;
+  left: 6% ;
+  font-size: 26px
+}
+
+.class102{
+  z-index: 2;
+  position: relative;
+  top: 2520px;
+  left:11% ;
+  font-size: 26px
 }

@@ -7,37 +7,71 @@ title{
     animation-timing-function: ease-in-out;/*徐々に加速して減速する動き方*/
 }
 
-h1 {
-    background-color:orange
-}
 
 h2 {
     margin: 0;
     box-sizing: border-box;
     overflow: hidden;
+    color: #ffffff;
   }
   
   #orange {
     height: 100vh;
     width: 100vw;
-    background-color: #111;
+    background-color: #ffffff;
   }
   
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0); /* 初期位置 */
-    }
-    40% {
-      transform: translateY(-30px); /* 上に跳ねる高さ（-30px） */
-    }
-    60% {
-      transform: translateY(-15px); /* 少し低い位置に跳ねる（-15px） */
-    }
+  * {
+    margin: 0;
+    padding: 0;
   }
-  
-  /* バウンドアニメーションを適用する要素のスタイル */
-  .ghost {
-    animation: bounce 2s infinite; /* 2秒間隔で無限にバウンドする */
-  }
-  
-  
+  body {
+    background: radial-gradient(ellipse at bottom, #00287b 0%, #000000 100%);
+     position: relative;
+     height: 100vh;
+     width: 100vw;
+     margin: 0;
+   }
+   
+   @import url('https://fonts.googleapis.com/css?family=Montserrat:900');
+   
+   h4,h5
+     margin: 0;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 30vh;
+     letter-spacing: 1vw;
+     position: absolute;
+     top: 15vh;
+     text-align: center;
+     left: 50%;
+     transform: translateX(-50%);
+     color: white;
+     / background:url('https://i.pinimg.com/originals/9f/9c/c5/9f9cc5217bb04790e5fb852b665ca2ff.jpg');
+     background:url('https://img.freepik.com/premium-vector/floral-seamless-pattern-classic-background-vector-illustration_41116-3641.jpg');
+      background-size: auto 200%;
+     background-clip: text;
+     text-fill-color: transparent;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     animation: shine 8s linear infinite;
+     &:nth-child(2) {
+       top: 50vh;
+     }
+     @keyframes shine {
+       from {
+         background-position: center 0;
+       }
+       to {
+         background-position: center 200%;
+       }
+     }
+    }
+
+   h2 {
+     font-size: 10vh;
+     color: #ffffff;
+   }
+
+   h1{
+    color: #ffffff;
+   }

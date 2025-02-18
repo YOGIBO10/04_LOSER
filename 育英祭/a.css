@@ -14,8 +14,29 @@ footer{
 	width: ;
 }
 
-.校内展示 {
-    color: #33352c;
+.校内展示{
+	color:#33352c;
+    margin:0.5em 0;
+    position: relative;
+    padding: 0.35em 1.5em;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+	width: 5.2%;
+}
+.校内展示:before, .校内展示:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: -webkit-calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: black;
+}
+.校内展示:before {left: 10px;}
+.校内展示:after {right: 10px;}
+.校内展示 p {
+    margin: 0; 
+    padding: 0;
 }
 
 .校内展示文{
@@ -24,6 +45,27 @@ footer{
 
 .模擬店{
 	color:#33352c;
+    margin:0.5em 0;
+    position: relative;
+    padding: 0.35em 1.5em;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+	width: 3.9%;
+}
+.模擬店:before, .模擬店:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: -webkit-calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: black;
+}
+.模擬店:before {left: 10px;}
+.模擬店:after {right: 10px;}
+.模擬店 p {
+    margin: 0; 
+    padding: 0;
 }
 
 .模擬店文{
@@ -31,7 +73,28 @@ footer{
 }
 
 .中ステージ{
-	color: #33352c;
+	color:#33352c;
+    margin:0.5em 0;
+    position: relative;
+    padding: 0.35em 1.5em;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+	width: 6.5%;
+}
+.中ステージ:before, .中ステージ:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: -webkit-calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: black;
+}
+.中ステージ:before {left: 10px;}
+.中ステージ:after {right: 10px;}
+.中ステージ p {
+    margin: 0; 
+    padding: 0;
 }
 
 .中ステージ文{
@@ -219,7 +282,7 @@ body::after {
 	display: inline-block;
 	padding: 0.5em 1em;
 	text-decoration: none;
-	background: #422dff;/*ボタン色*/
+	background: rgba(19, 157, 255, 0.527);/*ボタン色*/
 	color: rgb(251, 255, 7);
 	border-bottom: solid 4px #627295;
 	border-radius: 3px;
@@ -235,7 +298,7 @@ body::after {
 
   .btn-square:hover {
 	background: rgb(251, 255, 7);
-    color: #422dff;
+    color: rgba(19, 157, 255, 0.527);
   }
 
 .flexbox{
